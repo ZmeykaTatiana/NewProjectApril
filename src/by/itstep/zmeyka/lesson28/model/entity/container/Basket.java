@@ -20,6 +20,20 @@ public class Basket {
         this.milks = milks;
     }
 
+
+    public int getOrangeCount(){
+        return oranges.length;
+    }
+    public int getMilksCount(){
+        return milks.length;
+    }
+    public Orange getOrange(int index){
+        return oranges[index];
+    }
+    public Milk getMilk(int index){
+        return milks[index];
+    }
+
     public void add(Orange orange) {
         Orange[] temp = new Orange[oranges.length + 1];
         int i = 0;
@@ -91,4 +105,8 @@ public class Basket {
         return builder.toString();
 
     }
+
+
+
+
 }
